@@ -20,7 +20,7 @@ function NavBar() {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Menu
+           farts
           </button>
           <ul className="dropdown-menu">
             <li>
@@ -29,13 +29,8 @@ function NavBar() {
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/about">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link className="dropdown-item" to="/team">
-                Team
+              <Link className="dropdown-item" to="/LocHr">
+                Location/Hours
               </Link>
             </li>
             <li>
