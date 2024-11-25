@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Customers from "./Home/Customers";
+import Customers from "./Customers";
 
 const Home: React.FC = () => {
   return (

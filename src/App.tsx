@@ -3,8 +3,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./App.css"; // Import the global CSS file
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import Home from "./components/pages/Home";
-import LocHr from "./components/pages/LocHr";
+import Home from "./components/pages/Home/Home";
+import LocHr from "./components/pages/LocationHours/LocHr";
 import Contact from "./components/pages/Contact/Contact";
 import Footer from "./components/Footer";
 
@@ -17,7 +17,7 @@ function App() {
       <div className="content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/map" element={<LocHr />} />
+          <Route path="/LocHr" element={<LocHr />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

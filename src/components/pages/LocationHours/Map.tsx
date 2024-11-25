@@ -1,47 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { LatLngExpression } from "leaflet";
 import "leaflet/dist/leaflet.css";
-import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
-import "leaflet-defaulticon-compatibility";
-import "./Map.css";
+import L from "leaflet";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
+
+// Fix for default marker icon not showing
+let DefaultIcon = L.icon({
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
 
 const MapWithMarker: React.FC = () => {
-  // Set initial coordinates for the marker
-  const initialPosition: LatLngExpression = [51.505, -0.09]; // Example: London
-  const [markerPosition, setMarkerPosition] =
-    useState<LatLngExpression>(initialPosition);
-
-  // Handle marker drag event
-  const onMarkerDragEnd = (event: any) => {
-    const newPosition = event.target.getLatLng();
-    setMarkerPosition([newPosition.lat, newPosition.lng]);
-  };
-
   return (
-    <MapContainer
-      center={initialPosition}
-      zoom={13}
-      style={{ height: "100vh", width: "100%" }}
-      className="leaflet-container"
-    >
-      {/* Add a Tile Layer */}
+    <MapContainer center={[39.5362, -104.8977]} zoom={13} scrollWheelZoom={true} style={{ height: "400px", width: "100%" }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-
-      {/* Add a Draggable Marker */}
-      <Marker
-        position={markerPosition}
-        draggable={true}
-        eventHandlers={{
-          dragend: onMarkerDragEnd,
-        }}
-      >
+      <Marker position={[39.5362, -104.8977]}>
         <Popup>
-          Current Position: {Array.isArray(markerPosition) ? markerPosition[0].toFixed(5) : "N/A"},{" "}
-          {Array.isArray(markerPosition) ? markerPosition[1].toFixed(5) : "N/A"}
+          Lone Tree, Colorado
         </Popup>
       </Marker>
     </MapContainer>
