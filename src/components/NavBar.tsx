@@ -20,7 +20,7 @@ function NavBar() {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-           farts
+           Menu
           </button>
           <ul className="dropdown-menu">
             <li>

@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./components/pages/Home";
 import LocHr from "./components/pages/LocHr";
-import Contact from "./components/pages/Contact";
+import Contact from "./components/pages/Contact/Contact";
 import Footer from "./components/Footer";
 
 function App() {
