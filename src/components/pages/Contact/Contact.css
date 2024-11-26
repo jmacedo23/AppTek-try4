@@ -3,3 +3,58 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.contact-info {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 20px 0;
+  color: white; /* Revert the color */
+}
+
+h1 {
+  margin-left: 20px;
+  background: linear-gradient(to right, deepskyblue, white); /* Add gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.contact-info-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contact-form-container {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.contact-info-container,
+.contact-form-container {
+  margin-top: 100px;
+}
+
+.reach-us {
+  text-align: center;
+  font-size: 6em;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, deepskyblue, white); /* Make the blue slightly darker */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: white;
+  background: linear-gradient(to right, deepskyblue, white); /* Add gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

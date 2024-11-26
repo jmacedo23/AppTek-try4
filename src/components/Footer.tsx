@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <p>Copyright © 2024 ApproachTek - All Rights Reserved.</p>
       <p>Email: info@approachtek.com</p>
-      <p>ApproachTek LLC</p>
+      
       <p>Lonetree, Colorado, United States</p>
       <p>(303) 718-6348 </p>
       <p>Hours</p>

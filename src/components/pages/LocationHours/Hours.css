@@ -1,0 +1,23 @@
+.hours-container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #161616;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hours-container h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hours-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hours-container li {
+  font-size: 1.2em;
+  margin: 5px 0;
+}

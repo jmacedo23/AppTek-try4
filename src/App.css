@@ -1,3 +1,7 @@
 .content {
   min-height: calc(100vh - 50px); /* Adjust 50px to the height of your footer */
 }
+
+whole-page {
+font-family: 'SpaceMono', monospace;
+}
